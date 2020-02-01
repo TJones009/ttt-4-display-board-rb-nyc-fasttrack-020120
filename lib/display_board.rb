@@ -24,6 +24,6 @@ display_board(the_board)
 the_board = ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
 
 display_board(the_board)
-board = ["O", "X", " ", " ", "X", " ", "X", "O", " "]
+the_board = ["O", "X", " ", " ", "X", " ", "X", "O", " "]
 
 
