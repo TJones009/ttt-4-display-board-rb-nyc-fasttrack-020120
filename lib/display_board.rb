@@ -11,13 +11,14 @@ def display_board(the_board)
 end
 
 display_board(the_board)
-
 the_board = [" "," "," "," ","X"," "," "," "," "]
 
 display_board(the_board)
+the_board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 
-board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 
+display_board(the_board)
+the_board = ["O", "X", " ", " ", "X", " ", "X", "O", " "]
 
-display_board(ther_board)
+display_board(the_board)
 
