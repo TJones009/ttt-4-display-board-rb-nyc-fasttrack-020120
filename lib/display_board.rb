@@ -1,22 +1,25 @@
 # Define display_board that accepts a board and prints
 # out the current state.
+   board = ["X", "X", "X", "X", "O", "O", "X", "O", "O"]
 
-turn_1 = ["X"," "," "," "," "," "," "," "," "]
+      output = capture_puts{ display_board(board) }
+      rows = output.split("\n")
 
-def display_board(the_board)
- puts "#{the_board[0]} | #{the_board[1]} | #{the_board[2]}"
- puts "-----------"
- puts "#{the_board[3]} | #{the_board[4]} | #{the_board[5]}"
- puts "-----------"
- puts "#{the_board[6]} | #{the_board[7]} | #{the_board[8]}"
-end
+      expect(rows[0]).to eq(" X | X | X ")
+      expect(rows[1]).to eq("-----------")
+      expect(rows[2]).to eq(" X | O | O ")
+      expect(rows[3]).to eq("-----------")
+      expect(rows[4]).to eq(" X | O | O ")
 
-display board(turn_1)
 
-turn_1 = ["X"," "," "," ","O"," "," "," "," "]
+      board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
 
-display_board(turn_2)
+      output = capture_puts{ display_board(board) }
+      rows = output.split("\n")
 
-turn_2[1] = "O"
-
-display_board(turn_3)
+      expect(rows[0]).to eq(" X | O | X ")
+      expect(rows[1]).to eq("-----------")
+      expect(rows[2]).to eq(" O | X | X ")
+      expect(rows[3]).to eq("-----------")
+      expect(rows[4]).to eq(" O | X | O ")
+    end
