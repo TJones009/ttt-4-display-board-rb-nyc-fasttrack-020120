@@ -16,6 +16,8 @@ the_board = [" "," "," "," ","X"," "," "," "," "]
 
 display_board(the_board)
 
+board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
+
 turn_2[1] = "O"
 
 display_board(turn_3)
