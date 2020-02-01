@@ -18,6 +18,6 @@ display_board(the_board)
 
 board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 
-turn_2[1] = "O"
 
-display_board(turn_3)
+display_board(ther_board)
+
