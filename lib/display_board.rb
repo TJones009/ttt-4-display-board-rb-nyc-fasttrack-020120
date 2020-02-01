@@ -12,7 +12,7 @@ end
 
 display_board(the_board)
 
-the_board = [" "," "," "," ","O"," "," "," "," "]
+the_board = [" "," "," "," ","X"," "," "," "," "]
 
 display_board(the_board)
 
